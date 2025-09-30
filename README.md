@@ -58,7 +58,7 @@ This project is deployed using GitHub Pages. To deploy your own version:
 1. Fork this repository
 2. Go to Settings → Pages
 3. Select main branch as source
-4. Your site will be available at `https://[username].github.io/[repository-name]`
+4. Your site will be available at `https://Tedra-ez.github.io/assigment2`
 
 ## Author
 Yskak Zhanibek - Web Technology Assignment 2
