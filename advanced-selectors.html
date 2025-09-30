@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors - CSS Assignment</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/advanced-selectors.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Advanced CSS Selectors</h1>
+            <p>Attribute, pseudo-class, and combinator selectors</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="selectors.html">Basic Selectors</a></li>
+                <li><a href="advanced-selectors.html">Advanced Selectors</a></li>
+                <li><a href="colors-fonts.html">Colors & Fonts</a></li>
+                <li><a href="spacing.html">Spacing & Alignment</a></li>
+                <li><a href="profile.html">Profile Cards</a></li>
+                <li><a href="practical-examples.html">Practical Examples</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section class="page-section">
+            <h2 class="section-title">Advanced Selector Techniques</h2>
+            
+            <div class="attribute-selectors">
+                <h3>Attribute Selectors</h3>
+                
+                <div class="selector-demo">
+                    <input type="text" placeholder="Regular text input">
+                    <input type="email" placeholder="Email input">
+                    <input type="password" placeholder="Password input">
+                    <input type="submit" value="Submit Button">
+                </div>
+                
+                <div class="links-demo">
+                    <a href="https://example.com">External HTTPS Link</a>
+                    <a href="http://example.com">External HTTP Link</a>
+                    <a href="#internal">Internal Anchor Link</a>
+                    <a href="document.pdf">PDF Document</a>
+                </div>
+            </div>
+            
+            <div class="pseudo-classes">
+                <h3>Pseudo-class Selectors</h3>
+                
+                <div class="interactive-demo">
+                    <button class="btn-primary">Primary Button</button>
+                    <button class="btn-secondary">Secondary Button</button>
+                    <button class="btn-danger" disabled>Disabled Button</button>
+                </div>
+                
+                <div class="list-demo">
+                    <ul>
+                        <li>First list item</li>
+                        <li>Second list item</li>
+                        <li>Third list item</li>
+                        <li>Fourth list item</li>
+                        <li>Fifth list item</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="combinators">
+                <h3>Combinator Selectors</h3>
+                
+                <div class="combinator-demo">
+                    <div class="parent">
+                        <p>Direct child paragraph</p>
+                        <div>
+                            <p>Nested paragraph (descendant)</p>
+                        </div>
+                        <p>Adjacent sibling paragraph</p>
+                        <p>General sibling paragraph</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pseudo-elements">
+                <h3>Pseudo-element Selectors</h3>
+                
+                <div class="pseudo-demo">
+                    <p class="first-line">This paragraph demonstrates ::first-line pseudo-element. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    
+                    <p class="first-letter">This paragraph demonstrates ::first-letter pseudo-element. The first letter is styled differently.</p>
+                    
+                    <div class="before-after">
+                        Content with generated pseudo-elements
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Web Tech Assignment 2 - Advanced Selectors</p>
+        </div>
+    </footer>
+</body>
+</html>

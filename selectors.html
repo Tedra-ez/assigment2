@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors & Priority - CSS Assignment</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/selectors.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Part A: CSS Selectors & Priority</h1>
+            <p>Understanding selector types and their precedence</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="selectors.html">Selectors & Priority</a></li>
+                <li><a href="colors-fonts.html">Colors & Fonts</a></li>
+                <li><a href="spacing.html">Spacing & Alignment</a></li>
+                <li><a href="profile.html">Profile Cards</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section class="page-section">
+            <h2 class="section-title">CSS Selector Types</h2>
+            
+            <div class="selector-demo">
+                <h3>Element Selector</h3>
+                <p>This paragraph is styled using element selector (blue).</p>
+                
+                <h3>Class Selector</h3>
+                <p class="class-selector-demo">This paragraph uses a class selector (green).</p>
+                
+                <h3>ID Selector</h3>
+                <p id="id-selector-demo">This paragraph uses an ID selector (red).</p>
+                
+                <h3>Inline Style</h3>
+                <p style="color: purple;">This paragraph uses inline style (purple).</p>
+            </div>
+            
+            <div class="priority-demo">
+                <h3>Selector Priority Demonstration</h3>
+                <p class="class-priority" id="id-priority" style="color: orange;">
+                    This element has all selector types applied:<br>
+                    - Element selector (would be blue)<br>
+                    - Class selector (would be green)<br> 
+                    - ID selector (would be red)<br>
+                    - Inline style (actual color: orange)<br><br>
+                    <strong>Inline style wins because it has highest priority!</strong>
+                </p>
+            </div>
+            
+            <div class="specificity-examples">
+                <h3>Specificity in Action</h3>
+                <div class="nested-demo">
+                    <p class="nested-text">This text shows how nested selectors work</p>
+                </div>
+                
+                <div id="unique-section">
+                    <p class="section-text">ID vs Class specificity</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Web Tech Assignment 2 - Part A: Selectors & Priority</p>
+        </div>
+    </footer>
+</body>
+</html>

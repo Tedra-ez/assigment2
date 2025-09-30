@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Examples - CSS Assignment</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/practical-examples.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Practical CSS Examples</h1>
+            <p>Real-world applications of CSS concepts</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="selectors.html">Basic Selectors</a></li>
+                <li><a href="advanced-selectors.html">Advanced Selectors</a></li>
+                <li><a href="colors-fonts.html">Colors & Fonts</a></li>
+                <li><a href="spacing.html">Spacing & Alignment</a></li>
+                <li><a href="profile.html">Profile Cards</a></li>
+                <li><a href="practical-examples.html">Practical Examples</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section class="page-section">
+            <h2 class="section-title">Real-world CSS Applications</h2>
+            
+            <div class="navigation-example">
+                <h3>Navigation Menu with Hover Effects</h3>
+                <nav class="demo-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li class="dropdown">
+                            <a href="#services">Services ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#web">Web Development</a></li>
+                                <li><a href="#design">UI/UX Design</a></li>
+                                <li><a href="#consulting">Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="pricing-cards">
+                <h3>Pricing Cards with Different States</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h4>Basic</h4>
+                            <div class="price">$19<span>/month</span></div>
+                        </div>
+                        <ul class="features">
+                            <li>✓ 5 Projects</li>
+                            <li>✓ 10GB Storage</li>
+                            <li>✓ Basic Support</li>
+                            <li>✗ Advanced Features</li>
+                        </ul>
+                        <button class="plan-btn">Get Started</button>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="plan-header">
+                            <div class="popular-badge">Most Popular</div>
+                            <h4>Professional</h4>
+                            <div class="price">$49<span>/month</span></div>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Unlimited Projects</li>
+                            <li>✓ 50GB Storage</li>
+                            <li>✓ Priority Support</li>
+                            <li>✓ Advanced Features</li>
+                        </ul>
+                        <button class="plan-btn featured-btn">Get Started</button>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h4>Enterprise</h4>
+                            <div class="price">$99<span>/month</span></div>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Unlimited Projects</li>
+                            <li>✓ 500GB Storage</li>
+                            <li>✓ 24/7 Support</li>
+                            <li>✓ All Features</li>
+                        </ul>
+                        <button class="plan-btn">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-styling">
+                <h3>Styled Form Elements</h3>
+                <form class="demo-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="plan">Select Plan</label>
+                        <select id="plan">
+                            <option value="">Choose a plan</option>
+                            <option value="basic">Basic</option>
+                            <option value="pro">Professional</option>
+                            <option value="enterprise">Enterprise</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Enter your message" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter">Subscribe to newsletter</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Web Tech Assignment 2 - Practical Examples</p>
+        </div>
+    </footer>
+</body>
+</html>

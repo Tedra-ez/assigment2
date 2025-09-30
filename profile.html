@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards - CSS Assignment</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Part D: Profile Cards with Classes & IDs</h1>
+            <p>Reusable styles and unique elements with hover effects</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="selectors.html">Basic Selectors</a></li>
+                <li><a href="advanced-selectors.html">Advanced Selectors</a></li>
+                <li><a href="colors-fonts.html">Colors & Fonts</a></li>
+                <li><a href="spacing.html">Spacing & Alignment</a></li>
+                <li><a href="profile.html">Profile Cards</a></li>
+                <li><a href="practical-examples.html">Practical Examples</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+    <div class="container">
+        <section class="page-section">
+            <h2 class="section-title">Team Profile Cards</h2>
+            <p class="section-description">Demonstrating reusable classes and unique ID styling with interactive hover effects</p>
+            
+            <div class="profiles-container">
+                <!-- Student Profile with unique ID -->
+                <div class="profile-card" id="student-profile">
+                    <div class="profile-header">
+                        <div class="profile-photo">🎓</div>
+                        <h3 class="profile-name">Alex Johnson</h3>
+                        <p class="profile-title">Computer Science Student</p>
+                        <div class="profile-badge">Top Student</div>
+                    </div>
+                    <div class="profile-body">
+                        <p class="profile-description">Passionate about web technologies and AI. Currently learning advanced JavaScript and React. Enjoys solving complex problems and building innovative projects.</p>
+                        <div class="profile-skills">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">4.0</span>
+                                <span class="stat-label">GPA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-footer">
+                        <button class="contact-btn">Contact Alex</button>
+                    </div>
+                </div>
+                
+                <!-- Developer Profile with reusable classes -->
+                <div class="profile-card developer-profile">
+                    <div class="profile-header">
+                        <div class="profile-photo">💻</div>
+                        <h3 class="profile-name">Sarah Chen</h3>
+                        <p class="profile-title">Senior Web Developer</p>
+                        <div class="profile-badge">Pro Member</div>
+                    </div>
+                    <div class="profile-body">
+                        <p class="profile-description">Full-stack developer with 6+ years of experience. Specializes in React, Node.js, and cloud technologies. Loves mentoring junior developers and contributing to open source.</p>
+                        <div class="profile-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Success</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-footer">
+                        <button class="contact-btn">Contact Sarah</button>
+                    </div>
+                </div>
+                
+                <!-- Designer Profile with unique styling -->
+                <div class="profile-card" id="designer-profile">
+                    <div class="profile-header">
+                        <div class="profile-photo">🎨</div>
+                        <h3 class="profile-name">Marcus Rivera</h3>
+                        <p class="profile-title">UI/UX Designer</p>
+                        <div class="profile-badge">Creative</div>
+                    </div>
+                    <div class="profile-body">
+                        <p class="profile-description">Award-winning designer focused on creating intuitive user experiences. Combines aesthetic design with user-centered principles to build products people love.</p>
+                        <div class="profile-skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Sketch</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Designs</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-footer">
+                        <button class="contact-btn">Contact Marcus</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-explanation">
+                <h3>CSS Implementation Details</h3>
+                <div class="explanation-grid">
+                    <div class="explanation-item">
+                        <h4>Reusable Classes</h4>
+                        <ul>
+                            <li><code>.profile-card</code> - Base card styling</li>
+                            <li><code>.profile-header</code> - Header section</li>
+                            <li><code>.profile-body</code> - Content area</li>
+                            <li><code>.skill-tag</code> - Skill badges</li>
+                        </ul>
+                    </div>
+                    <div class="explanation-item">
+                        <h4>Unique IDs</h4>
+                        <ul>
+                            <li><code>#student-profile</code> - Special student styling</li>
+                            <li><code>#designer-profile</code> - Creative designer theme</li>
+                        </ul>
+                    </div>
+                    <div class="explanation-item">
+                        <h4>Hover Effects</h4>
+                        <ul>
+                            <li>Card transform animation</li>
+                            <li>Border highlight</li>
+                            <li>Shadow enhancement</li>
+                            <li>Button state changes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Web Tech Assignment 2 - Part D: Profile Cards</p>
+        </div>
+    </footer>
+</body>
+</html>

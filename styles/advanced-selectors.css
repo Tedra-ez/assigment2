@@ -1,0 +1,251 @@
+/* ===== ADVANCED SELECTORS DEMONSTRATION ===== */
+
+/* Attribute Selectors */
+input[type="text"] {
+    border: 2px solid #3498db;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+}
+
+input[type="email"] {
+    border: 2px solid #2ecc71;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+}
+
+input[type="password"] {
+    border: 2px solid #e74c3c;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Link attribute selectors */
+a[href^="https"] {
+    color: #27ae60;
+    border-left: 3px solid #27ae60;
+}
+
+a[href^="http"]:not([href^="https"]) {
+    color: #e74c3c;
+    border-left: 3px solid #e74c3c;
+}
+
+a[href$=".pdf"]::after {
+    content: " 📄";
+}
+
+a[href^="#"] {
+    color: #9b59b6;
+    border-left: 3px solid #9b59b6;
+}
+
+.selector-demo, .links-demo {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.links-demo a {
+    display: block;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    background: white;
+    padding-left: 1rem;
+}
+
+/* Pseudo-class Selectors */
+.btn-primary {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.btn-danger:disabled {
+    background: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    border: none;
+}
+
+/* List pseudo-classes */
+.list-demo li:first-child {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.list-demo li:last-child {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.list-demo li:nth-child(odd) {
+    background: #f8f9fa;
+}
+
+.list-demo li:nth-child(even) {
+    background: #ecf0f1;
+}
+
+.list-demo li:nth-child(3) {
+    border-left: 3px solid #2ecc71;
+}
+
+.list-demo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list-demo li {
+    padding: 0.8rem 1rem;
+    margin: 0.2rem 0;
+    border-radius: 4px;
+}
+
+/* Combinator Selectors */
+.parent > p {
+    color: #e74c3c;
+    font-weight: bold;
+    padding: 0.5rem;
+    background: #ffeaa7;
+}
+
+.parent p {
+    border-left: 3px solid #fdcb6e;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+}
+
+.parent p + p {
+    background: #fab1a0;
+    color: #d63031;
+}
+
+.parent p ~ p {
+    border-top: 1px solid #fd79a8;
+}
+
+.combinator-demo {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Pseudo-element Selectors */
+.first-line::first-line {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.first-letter::first-letter {
+    font-size: 3em;
+    color: #e74c3c;
+    float: left;
+    line-height: 1;
+    margin-right: 0.1em;
+    font-weight: bold;
+}
+
+.before-after {
+    position: relative;
+    padding: 2rem;
+    background: #3498db;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.before-after::before {
+    content: "«";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgba(255,255,255,0.7);
+}
+
+.before-after::after {
+    content: "»";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgba(255,255,255,0.7);
+}
+
+.pseudo-demo {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Section Styling */
+.attribute-selectors,
+.pseudo-classes,
+.combinators,
+.pseudo-elements {
+    margin-bottom: 3rem;
+}
+
+.attribute-selectors h3,
+.pseudo-classes h3,
+.combinators h3,
+.pseudo-elements h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech Assignment 2 - CSS Fundamentals</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/selectors.css">
+    <link rel="stylesheet" href="styles/colors-fonts.css">
+    <link rel="stylesheet" href="styles/spacing.css">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Web Tech Assignment 2 - CSS Fundamentals</h1>
+            <p>Demonstrating CSS Selectors, Colors, Fonts, Spacing, and More</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="selectors.html">Selectors & Priority</a></li>
+                <li><a href="colors-fonts.html">Colors & Fonts</a></li>
+                <li><a href="spacing.html">Spacing & Alignment</a></li>
+                <li><a href="profile.html">Profile Cards</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section class="page-section">
+            <h2 class="section-title">Welcome to CSS Fundamentals Assignment</h2>
+            <p>This website demonstrates all requirements for Assignment 2:</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3><a href="selectors.html">Part A: Selectors & Priority</a></h3>
+                    <p>Element, class, and ID selectors with priority demonstration</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3><a href="colors-fonts.html">Part B: Colors & Fonts</a></h3>
+                    <p>Color schemes, font families, and typography styles</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3><a href="spacing.html">Part C: Spacing & Alignment</a></h3>
+                    <p>Margin, padding, line-height, and text alignment</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3><a href="profile.html">Part D: Profile Cards</a></h3>
+                    <p>Reusable classes and unique IDs with hover effects</p>
+                </div>
+            </div>
+            <!-- Добавить в index.html после feature-grid -->
+<section class="page-section">
+    <h2 class="section-title">Assignment Requirements Checklist</h2>
+    
+    <div class="requirements-grid">
+        <div class="requirement-item completed">
+            <h3>✅ Part A: Selectors & Priority</h3>
+            <ul>
+                <li>Element, class, and ID selectors</li>
+                <li>Selector priority demonstration</li>
+                <li>Inline > ID > Class > Element</li>
+            </ul>
+        </div>
+        
+        <div class="requirement-item completed">
+            <h3>✅ Part B: Colors & Fonts</h3>
+            <ul>
+                <li>3 font families (serif, sans-serif, monospace)</li>
+                <li>Text colors & background colors</li>
+                <li>Hover effects for links</li>
+                <li>Font sizes, weights, and styles</li>
+            </ul>
+        </div>
+        
+        <div class="requirement-item completed">
+            <h3>✅ Part C: Spacing & Alignment</h3>
+            <ul>
+                <li>Margin and padding for layout</li>
+                <li>Line-height for readability</li>
+                <li>Text alignment (left, right, center, justify)</li>
+            </ul>
+        </div>
+        
+        <div class="requirement-item completed">
+            <h3>✅ Part D: Classes & IDs Practical</h3>
+            <ul>
+                <li>Styled profile cards</li>
+                <li>Reusable classes and unique IDs</li>
+                <li>Hover effects (border, background, transform)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="page-section">
+    <h2 class="section-title">Technical Implementation</h2>
+    
+    <div class="implementation-details">
+        <div class="code-example">
+            <h3>CSS Selector Priority Example</h3>
+            <pre><code>/* Element selector - lowest priority */
+p { color: blue; }
+
+/* Class selector - higher priority */
+.special { color: green; }
+
+/* ID selector - higher priority */
+#unique { color: red; }
+
+/* Inline style - highest priority */
+&lt;p style="color: purple;"&gt;</code></pre>
+        </div>
+        
+        <div class="code-example">
+            <h3>Font Families Implementation</h3>
+            <pre><code>.serif { font-family: "Times New Roman", serif; }
+.sans-serif { font-family: Arial, sans-serif; }
+.monospace { font-family: "Courier New", monospace; }</code></pre>
+        </div>
+    </div>
+</section>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Web Tech Assignment 2 - CSS Fundamentals</p>
+            <p>Created for educational purposes</p>
+        </div>
+    </footer>
+</body>
+</html>

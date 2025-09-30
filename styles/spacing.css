@@ -1,0 +1,223 @@
+/* ===== PART C: SPACING & ALIGNMENT ===== */
+
+/* Spacing Examples */
+.spacing-demo {
+    margin-bottom: 3rem;
+}
+
+.spacing-demo h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.spacing-example {
+    background: white;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.spacing-example:hover {
+    border-color: #3498db;
+    transform: translateX(5px);
+}
+
+.spacing-example h4 {
+    background: #34495e;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.spacing-example p {
+    padding: 1rem;
+    margin: 0;
+    background: #f8f9fa;
+}
+
+/* Specific Spacing Styles */
+.default-spacing {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.large-margin {
+    margin: 40px 0;
+    padding: 15px;
+}
+
+.large-padding {
+    margin: 20px 0;
+    padding: 30px;
+}
+
+.asymmetric-spacing {
+    margin: 10px 30px 20px 5px;
+    padding: 15px 25px 15px 10px;
+}
+
+/* Line Height Demo */
+.line-height-demo {
+    margin-bottom: 3rem;
+}
+
+.line-height-demo h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.text-sample {
+    background: white;
+    border-left: 4px solid #3498db;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.text-sample h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.compact-text p {
+    line-height: 1.2;
+    background: #fff5f5;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.normal-text p {
+    line-height: 1.6;
+    background: #f0fff4;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.spacious-text p {
+    line-height: 2.0;
+    background: #f0f8ff;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+/* Alignment Demo */
+.alignment-demo {
+    margin-bottom: 3rem;
+}
+
+.alignment-demo h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.alignment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.alignment-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid #3498db;
+}
+
+.alignment-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.alignment-item p {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.left-align p {
+    text-align: left;
+    border-left: 3px solid #e74c3c;
+}
+
+.center-align p {
+    text-align: center;
+    border-left: 3px solid #3498db;
+}
+
+.right-align p {
+    text-align: right;
+    border-left: 3px solid #2ecc71;
+}
+
+.justify-align p {
+    text-align: justify;
+    border-left: 3px solid #f39c12;
+}
+
+/* Practical Layout Example */
+.practical-example {
+    margin-top: 2rem;
+}
+
+.practical-example h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.layout-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.sidebar, .main-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.sidebar h4, .main-content h4 {
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+.main-content {
+    background: #ecf0f1;
+    border-left: 4px solid #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .alignment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .layout-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .spacing-example {
+        margin: 1rem 0;
+    }
+}
