@@ -1,6 +1,3 @@
-/* ===== PRACTICAL CSS EXAMPLES ===== */
-
-/* Navigation Demo */
 .demo-nav {
     background: #2c3e50;
     border-radius: 8px;
@@ -30,7 +27,6 @@
     background: #3498db;
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -236,7 +232,6 @@
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
-/* Section Styling */
 .navigation-example,
 .pricing-cards,
 .form-styling {

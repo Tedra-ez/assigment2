@@ -1,6 +1,3 @@
-/* ===== ADVANCED SELECTORS DEMONSTRATION ===== */
-
-/* Attribute Selectors */
 input[type="text"] {
     border: 2px solid #3498db;
     padding: 0.5rem;
@@ -32,7 +29,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Link attribute selectors */
 a[href^="https"] {
     color: #27ae60;
     border-left: 3px solid #27ae60;
@@ -68,7 +64,6 @@ a[href^="#"] {
     padding-left: 1rem;
 }
 
-/* Pseudo-class Selectors */
 .btn-primary {
     background: #3498db;
     color: white;
@@ -115,7 +110,6 @@ a[href^="#"] {
     border: none;
 }
 
-/* List pseudo-classes */
 .list-demo li:first-child {
     color: #e74c3c;
     font-weight: bold;
@@ -149,7 +143,6 @@ a[href^="#"] {
     border-radius: 4px;
 }
 
-/* Combinator Selectors */
 .parent > p {
     color: #e74c3c;
     font-weight: bold;
@@ -179,7 +172,6 @@ a[href^="#"] {
     margin: 1rem 0;
 }
 
-/* Pseudo-element Selectors */
 .first-line::first-line {
     font-weight: bold;
     color: #2c3e50;
@@ -232,7 +224,6 @@ a[href^="#"] {
     margin: 1rem 0;
 }
 
-/* Section Styling */
 .attribute-selectors,
 .pseudo-classes,
 .combinators,
